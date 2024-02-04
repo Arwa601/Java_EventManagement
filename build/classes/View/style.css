@@ -1,0 +1,10 @@
+
+/* styles.css */
+
+.error {
+    -fx-border-color: red;
+}
+
+.error-label {
+    -fx-text-fill: red;
+}

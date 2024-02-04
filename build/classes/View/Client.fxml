@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="519.0" prefWidth="600.0" style="-fx-background-color: #faf0e6;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.ClientController">
+   <children>
+      <AnchorPane layoutX="94.0" layoutY="78.0" prefHeight="363.0" prefWidth="412.0" style="-fx-background-color: #faf0e6;">
+         <children>
+            <TextField layoutX="113.0" layoutY="31.0" mouseTransparent="true" promptText="nom" />
+            <TextField layoutX="113.0" layoutY="82.0" promptText="prenom" />
+            <TextField layoutX="113.0" layoutY="134.0" promptText="eventname" />
+            <TextField layoutX="113.0" layoutY="182.0" promptText="eventype" />
+            <TextField fx:id="capacity" layoutX="113.0" layoutY="290.0" onAction="#filled" promptText="capacity" />
+            <DatePicker layoutX="113.0" layoutY="236.0" prefHeight="31.0" prefWidth="187.0" />
+         </children>
+      </AnchorPane>
+     <Button fx:id="bt1" layoutX="264.0" layoutY="459.0" mnemonicParsing="false" onAction="#submit" text="SUBMIT">
+
+    </Button>
+
+      <Text layoutX="174.0" layoutY="77.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome back !">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
