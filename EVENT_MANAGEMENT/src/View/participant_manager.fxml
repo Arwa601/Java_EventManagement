@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="583.0" prefWidth="600.0" style="-fx-background-color: #faf0e6;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.participant_manager">
+   <children>
+      <TableView layoutX="15.0" layoutY="68.0" prefHeight="488.0" prefWidth="568.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="Nom" />
+          <TableColumn prefWidth="75.0" text="prenom" />
+            <TableColumn prefWidth="193.0" text="mail" />
+            <TableColumn prefWidth="98.0" text="eventchoisi" />
+            <TableColumn prefWidth="126.0" text="is confirmed" />
+        </columns>
+      </TableView>
+      <Pane layoutX="3.0" layoutY="41.0" prefHeight="4.0" prefWidth="592.0" style="-fx-background-color: #000000;" />
+      <Text layoutX="15.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Participant manager">
+         <font>
+            <Font name="Arial" size="21.0" />
+         </font>
+      </Text>
+      <Button fx:id="signouts" layoutX="518.0" layoutY="7.0" mnemonicParsing="false" onAction="#presse_signout" text="Sign out" />
+   </children>
+</AnchorPane>
