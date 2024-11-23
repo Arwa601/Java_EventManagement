@@ -23,10 +23,10 @@ public class Materiel {
       // Méthode pour générer un identifiant unique
     
     private  String generateIdentifiant() {
-        //  nous utilisons simplement une valeur statique qui s'incrémente à chaque appel
+        
         
         identifiantCounter+=1;
-        //switch expressions
+      
         return switch (Type) {
             case Décoratif -> "Deco" + String.valueOf(identifiantCounter);
                 
